@@ -1,8 +1,18 @@
-# React + Vite
+# Random Password Generator Using ReactJS
+## Hooks used in this Project
+- UseRef
+- UseState
+- UseCallBack
+- UseEffect
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Why UseRef ?
+### Useref is used to make copy to clipboard feature using <ins>[window.current?.select](https://developer.mozilla.org/en-US/docs/Web/API/Window/getSelection)</ins> You can refer about it on MDN.
 
-Currently, two official plugins are available:
+## Why UseState ?
+### UseState is used to manaage states of input values and store password values
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Why useCallback ?
+### useCallBack is used to optimize the code re-rendering, we specify what are the possible dependencies are there which can trigger the change of password and run the function, and stores the rerendered values in cache memory.
+
+## UseEffect
+### UseEffect is used to re-render based on dependencies of length ranger,Number Checkbox, Char Checkbox. when clicked on any of these dependencies it will call the Password GeneratorFunction(). 
